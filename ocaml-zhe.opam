@@ -1,0 +1,22 @@
+opam-version: "1.2"
+name: "ocaml-zhe"
+version:"0.1"
+maintainer: "angelo@icorsaro.net"
+homepage: "http://www.icorsaro.net"
+license: "LGPL"
+
+build: [
+  ["jbuilder" "build" "--only" "ocamlzhe" "--root" "." "-j" jobs]
+]
+build: [
+  ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
+  ["ocaml" "setup.ml" "-build"]
+]
+
+install: ["ocaml" "setup.ml" "-install"]
+
+depends: [
+  "conf-ocaml"
+  "ctypes"
+  "cytpes-foreign"
+]

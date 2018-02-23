@@ -1,0 +1,11 @@
+lib: [
+  "_build/install/default/lib/ocaml-zhe/META" {"META"}
+  "_build/install/default/lib/ocaml-zhe/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/ocamlzhe" {"ocamlzhe"}
+]
+doc: [
+  "_build/install/default/doc/ocaml-zhe/README.md"
+  "_build/install/default/doc/ocaml-zhe/LICENSE"
+]

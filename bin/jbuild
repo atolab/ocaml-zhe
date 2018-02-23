@@ -1,0 +1,9 @@
+(jbuild_version 1)
+
+(executables
+ ((names (pub))
+  (libraries (ocamlzhe))))
+
+(install
+ ((section bin)
+  (files ((pub.exe as ocamlzhe)))))

@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name            ocamlzhe)
+  (libraries       (ctypes ctypes.foreign stdint))
+  (c_flags         (-L/usr/local/lib/zhe))
+  (c_library_flags (-ldzhe))))
