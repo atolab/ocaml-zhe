@@ -3,7 +3,8 @@ lib: [
   "_build/install/default/lib/ocaml-zhe/opam" {"opam"}
 ]
 bin: [
-  "_build/install/default/bin/ocamlzhe" {"ocamlzhe"}
+  "_build/install/default/bin/pub" {"pub"}
+  "_build/install/default/bin/sub" {"sub"}
 ]
 doc: [
   "_build/install/default/doc/ocaml-zhe/README.md"

@@ -32,7 +32,7 @@ let zhe_publish =
   foreign "zhe_publish" (int @-> int @-> int @-> returning zhe_pubidx_t)
 
 let zhe_subscribe =
-  foreign "zhe_subscribe" (int @-> int @-> int @-> funptr on_data_available_fun_t @-> returning zhe_subidx_t)
+  foreign "zhe_subscribe" (int @-> int @-> int @-> funptr on_data_available_fun_t @-> ptr void  @-> returning zhe_subidx_t)
 
 let zhe_write =
   foreign "zhe_write" (zhe_pubidx_t @-> string @-> int @-> int @-> returning int)
